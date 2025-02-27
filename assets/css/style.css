@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+/* Trang login */
+
+#login {
+  margin: 2rem auto;
+  width: 45%;
+  background-color: aqua;
+}
+
+#login h2 {
+  justify-content: center;
+  padding-top: 1rem;
+  display: flex;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fd4585;
+  flex-wrap: wrap;
+}
+
+#login .img {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+#login .img img {
+  width: 10rem;
+}
+
+#login .txt {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+#login .txt label {
+  color: #fd4585;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+#login .txt input {
+  width: 100%;
+  margin-top: 0.5rem;
+  font-size: 1.8rem;
+}
+
+#login .btn-login {
+  display: flex;
+  justify-content: center;
+}
+
+#login #login-btn {
+  padding: 1.5rem 2.5rem;
+  background-color: #fd4185;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#login-btn:hover {
+  opacity: 0.95;
+}
+
+#login .error {
+  text-align: center;
+  padding-bottom: 1rem;
+  color: red;
+}
+
+#login .hidden {
+  display: none;
+}
+
+/* Trang mã pin */
+
+#mapin {
+  margin: 20px auto;
+  width: 30%;
+  height: 150px;
+  background-color: aqua;
+  text-align: center;
+}
+
+#mapin #pin {
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+#mapin p {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+#mapin button {
+  margin: 15px 10px;
+  padding: 1.5rem 3rem;
+  cursor: pointer;
+  font-weight: 500;
+  border: 0;
+  border-radius: 10px;
+  background-color: #fd4185;
+  color: white;
+  font-size: 1.6rem;
+}
+
+#mapin .loi {
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: red;
+}
+
+#mapin .giau-ma {
+  display: none;
+}
+
+/* Trang admin  */
+
+#admin {
+  /* text-align: center; */
+  width: 50%;
+  height: 400px;
+  background-color: aqua;
+  margin: 20px auto;
+}
+
+#admin h2 {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  /* height: 150px; */
+  color: #fd4585;
+  text-transform: uppercase;
+}
+#admin span {
+  font-weight: 700;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  display: flex;
+}
+
+#admin div {
+  padding-left: 10px;
+  margin-bottom: 10px;
+  /* display: flex; */
+}
+
+#admin div input {
+  margin-left: 10px;
+  font-size: 1.8;
+}
+#admin .o-nap button {
+  padding: 1.5rem 3.5rem;
+}
+
+#admin div p {
+  color: red;
+  font-size: 1.4rem;
+  margin-top: -10px;
+  margin-left: 140px;
+}
+
+.giau-loi-chuyen,
+.giau-loi-rut {
+  display: none;
+}
+
+#admin .o-rut button {
+  padding: 1.5rem 3.8rem;
+}
+
+#admin select {
+  margin-left: 10px;
+}
+
+#admin #log-out {
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 1.5rem 3.25rem;
+}
+
+#admin button {
+  padding: 1.5rem 2.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  border: 0;
+  border-radius: 10px;
+  background-color: #fd4185;
+  color: white;
+}
+
+#admin button:hover {
+  opacity: 0.95;
+}
+
+/*  */

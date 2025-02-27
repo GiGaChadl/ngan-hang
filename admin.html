@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>admin page</title>
+  </head>
+  <body onload="adminLoginPinfalse();">
+    <div id="admin">
+      <h2>Chào mừng đến với JosNguyenBank</h2>
+      <span
+        >Số dư của bạn là:
+        <p id="sodu"></p
+      ></span>
+
+      <div class="o-nap">
+        <button id="naptien" onclick="napTien();">Nạp Tiền</button>
+        <input type="number" class="nap" placeholder="Tối thiểu 1đ" />
+      </div>
+
+      <div class="o-chuyen">
+        <button id="chuyentien" onclick="chuyenTien();">Chuyển Tiền</button>
+        <input type="number" class="chuyen" placeholder="Tối thiểu 1đ" />
+        <select name="banks" id="bank">
+          <option value="vcb">Vietcombank</option>
+          <option value="scb">Sacombank</option>
+          <option value="tcb">Techcombank</option>
+          <option value="klb">Kienlongbank</option>
+          <option value="acb">ACB</option>
+        </select>
+        <p class="giau-chuyen giau-loi-chuyen"></p>
+      </div>
+
+      <div class="o-rut">
+        <button id="ruttien" onclick="rutTien();">Rút Tiền</button>
+        <input type="number" class="rut" placeholder="Tối thiểu 1đ" />
+        <p class="giau-rut giau-loi-rut"></p>
+      </div>
+
+      <button id="log-out" onclick="logOut();">Đăng xuất</button>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
