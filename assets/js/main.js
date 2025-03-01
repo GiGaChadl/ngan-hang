@@ -63,13 +63,20 @@ function isAdminLoginPinOrNot() {
 }
 
 // Trang admin
-let soDu = 0;
+let soDu = localStorage.getItem("sD");
+
+if (soDu === null) {
+  soDu = 0;
+} else {
+  soDu = Number(soDu);
+}
 document.getElementById("sodu").innerHTML = soDu;
 
 function napTien() {
   let tienNap = Number(document.getElementsByClassName("nap")[0].value);
   if (tienNap > 0) {
     soDu += tienNap;
+    localStorage.setItem("sD", soDu);
     document.getElementById("sodu").innerHTML = soDu;
   }
 }
@@ -81,6 +88,7 @@ function chuyenTien() {
   let Chuyen = Number(document.getElementsByClassName("chuyen")[0].value);
   if (soDu >= Chuyen) {
     soDu -= Chuyen;
+    localStorage.setItem("sD", soDu);
     document.getElementById("sodu").innerHTML = soDu;
     C.classList.add("giau-loi-chuyen");
   } else {
@@ -94,6 +102,7 @@ function rutTien() {
   let Rut = Number(document.getElementsByClassName("rut")[0].value);
   if (soDu >= Rut) {
     soDu -= Rut;
+    localStorage.setItem("sD", soDu);
     document.getElementById("sodu").innerHTML = soDu;
     R.classList.add("giau-loi-rut");
   } else {
